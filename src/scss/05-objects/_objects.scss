@@ -1,0 +1,116 @@
+@import '../01-settings/settings';
+@import '../02-tools/tools';
+
+.page {
+    text-align: center;
+
+    &__background {
+        z-index: -1;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 200px;
+        background-image: url(/background.svg);
+        background-size: cover;
+    }
+
+    &__section {
+        margin-top: 25px;
+    }
+
+    &__form {
+        &--input {
+            background-color: transparent;
+            color: $color-font;
+            border: 2px solid $color-secondary;
+            border-radius: 15px;
+            height: 40px;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        &--button {
+            background-color: $color-primary;
+            color: $color-font;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: block;
+            border: none;
+            margin: 10px auto;
+
+            &:hover {
+                background-color: rgba($color: $color-primary, $alpha: 0.75);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.home {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.loading {
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+    
+    &__item {
+        color: $color-font;
+        padding: 5px;
+        text-decoration: none;
+    }
+}
+
+.rides {
+    &__container {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+
+    &__item {
+        background-color: $color-font;
+        color: $color-background;
+        width: 80%;
+        max-width: 400px;
+        margin: 10px auto;
+        border-radius: 20px;
+        padding: 10px;
+
+        &--details {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__link {
+        color: $color-font;
+        &--container {
+            text-align: center;
+        }
+    }
+}
+
+.add-ride {
+    text-align: center;
+
+    &__heading {
+        color: $color-background;
+        text-align: center;
+    }
+
+    &__input {
+        background-color: transparent;
+        color: $color-font;
+        border: 2px solid $color-secondary;
+        border-radius: 15px;
+        height: 40px;
+        padding: 10px;
+        margin: 5px auto;
+    }
+}
